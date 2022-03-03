@@ -1,0 +1,754 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FALCON FINANCE</title>
+<script src="https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js"></script>
+<script src="./node_modules/web3/dist/web3.min.js"></script>
+<script src="./S56.js"></script>
+<script src="https://falcon.finance/sam.js?ver=1"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+<style type="text/css">html, body { margin:0; padding:0; height:100%;}</style>
+<link rel="shortcut icon" href="/images/falconlogoCMC.png" type="image/x-icon">
+<script async src='https://falcon.finance/cdn-cgi/bm/cv/669835187/api.js'></script><script async src='https://falcon.finance/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body>
+<style type="text/css">
+    	body
+	{
+		background-color: black; 
+		background-position: center center; 
+		overflow-x:hidden;
+		background-attachment: fixed; 
+		background-repeat: no-repeat; 
+		background-size: cover; 
+		background-image: url(bgimgfuturecity.jpg);
+	}
+	a {text-decoration: none;}
+	img 
+	{
+		border: none;
+		max-width: 100%;
+	}
+	.gloow {transition: all 0.25s; border: none;}
+	.glooow {transition: all 1s; color:#33FFE6;}
+	.glooow:hover{color:black; background-image: linear-gradient(to right, #66FFCC, #33FFE6);  box-shadow: 0px 0px 10px #66FFCC;}
+	.gloow:hover{box-shadow: 0px 0px 25px #FF003D;}
+	ul{list-style-type: none; display: inline;}
+	.yhh li {display: inline; padding-left: 13px; font-size: 10px;}
+	.yhh li a {color:white; font-weight: bolder;}
+	.yhh li a:hover {color:#35FFE5;}
+	.sociallinks
+	{
+		list-style-type: none;
+		display: inline;
+		position: relative;
+		top: -41px;
+	}
+	.sociallinks li
+	{
+	 	display: inline; padding-left: 13px; font-size: 10px;
+	}
+	.sociallinks li:first-child a	
+	{
+		padding: 0px 20px 0px 0px;
+	}
+
+
+	.sociallinks li:last-child a img
+	{
+		height: 26px;
+		width: 22px;
+		position: relative;
+		top: 4px;
+	}
+
+	.sociallinks li a img
+	{
+		height: 20px;
+		width: auto;
+		transition: all .5s ease 0s;
+	}
+	.sociallinks li a img:hover
+	{
+		transform: scale(1.1);
+	}
+	#buyfnt{transition: all 0.25s; border: none; font-family: 'Montserrat';}
+	#liq{transition: all 0.25s; border: none; font-family: 'Montserrat';}
+	#buyfnt:hover{}
+	#liq:hover{}
+	.yh li {display: inline; padding-left: 13px; font-size: 12px;}
+	.yh li a{color:white;}
+
+
+	#buyfnt img {
+		transition: all .5s ease 0s;
+		position: relative;
+		top: 4.5%;
+	}
+
+	#liq img
+	{
+		transition: all .5s ease 0s;
+		position: relative;
+		top: 7%;	
+	}
+
+	#buyfnt img:hover,
+	#liq img:hover
+	{
+		transform: scale(1.1);
+	}
+	.stakeclaimend
+	{
+		margin: 0px 20px;
+	}
+	.bottomdiv
+	{
+		max-width: 100%;
+		width: 880px !important;
+		margin: 0px auto;
+	}
+	.bottomdiv ul
+	{
+		display: inline-block !important;
+		width: 33%;
+		padding: 0px 0px;
+	}
+	.bottomdiv ul li
+	{
+		padding: 0px 10px;
+	}
+	.bottomdiv .links.yh .mobile
+	{
+		display: none;
+	}
+	.slideshow-container {
+  position: relative;
+}
+    .mySlides {
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  background-color: black;
+  color: white;
+  border: 2px solid #FF03C8;
+
+  transition: 0.2s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@keyframes glow {
+	from{box-shadow: 0px 0px 0px black;}
+	to{box-shadow: 0px 0px 40px #FF003D;}
+}
+
+#faqwrap
+{
+	position: relative;
+}
+
+#faq2
+{
+	display: none;
+	position: absolute;
+	top: 12px;
+	left: 0px;
+	padding: 0px 13px 13px;
+	background: #0004;
+	z-index:1;
+}
+
+#faq2 a
+{
+	padding: 12px 0px 0px;
+	display: inline-block;
+}
+
+#faqwrap:hover #faq2,
+#faq2.c1licked
+{
+	display: inline-block;
+}
+
+#buyfnt
+{
+	margin-left: 20px;
+}
+
+#faq2>a
+{
+	text-transform: capitalize;
+}
+#wla>img
+{
+	width: 244px;
+	height: auto;
+}
+
+.topblock
+{
+	width: 1200px;
+	margin: 0px auto;
+	max-width: 100%;
+	height: 10%; 
+	background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+
+.mobile
+{
+	display: none;
+}
+
+.desktop
+{
+
+}
+
+.wrapper
+{ 
+	height:100%; 
+	position: fixed; 
+	width: 100%; 
+	background-color: rgba(0,0,0,0.74);
+}
+
+#earning
+{
+	position: relative;
+	left: 1.4%;
+	top: -77px;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+}
+
+.bottomwrapper
+{
+	width: 100%; 
+	bottom: 0; 
+	height: 15%; 
+	font-family: 'Montserrat'; 
+	font-weight: light; 
+	position: fixed; 
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+
+.stakevalue
+{
+	position: absolute;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+/*	color: #fff;*/
+	color: #ff03c8;
+	width: 100%;
+	bottom: 0px;
+	font-family: 'Montserrat';	
+}
+
+@media (max-width: 880px)
+{
+
+    	body
+	{
+		background-position: 48% center; 
+	}
+	.desktop
+	{
+		display: none;
+	}
+	.mobile
+	{
+		display: unset;
+	}
+        .topblockmobile
+	{
+		top: 5px;
+		position: relative;
+	}
+	.topblockmobile a
+	{
+		display: inline-block;
+		float: left;
+		width: 55px;
+		height: 57px;
+		margin: 6px;
+	}
+        .topblockmobile a img
+	{
+		width: 100%;
+		height: 100%;
+	}
+	.topblockmobile a:last-child
+	{
+		float: right;
+		padding: 4px 7px 7px;
+		width: 41px;
+		height: 43px;
+	}
+	.slideshow-container {
+		margin-top: 50px;
+		min-height: calc(100vh - 240px);
+	}
+	
+	/* мобильное меню */
+	#menuopen
+	{
+		opacity:1;
+		transition: all .5s ease 0s;
+	}
+	#menuopen.opened
+	{
+		opacity:0;
+	}
+	#mobilemenu.desktop
+	{
+		display: block;
+	}
+	#mobilemenu
+	{
+		transition: all .5s ease 0s;
+		top: 0px;
+		height:0px;
+		overflow: hidden;
+		position: absolute;
+		opacity: 0;
+		background: #000d;
+		z-index: 2;
+	}
+	#mobilemenu.opened
+	{
+		opacity: 1;
+		display: block;
+		position: absolute;
+		height: 100vh;
+		top: 0px;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+    		transform: translateY(0);
+	}
+	#mobilemenu>ul
+	{
+		display: block;
+		padding: 6px;
+		width: 100%;
+		margin-top: 160px;
+	}
+	#mobilemenu>ul.links.yhh
+	{
+		width: auto;
+	}
+
+	#mobilemenu>ul:first-child
+	{
+		width: auto;
+		float: left;
+		margin: 0px;
+		margin-top: 5px;
+		opacity: 0;
+	}
+	#mobilemenu>ul:first-child li
+	{
+		padding-left:0px;
+		margin-left: 0px !important;
+	}
+	#mobilemenu>ul:first-child li img
+	{
+		top: 0px !important;
+	}
+	#mobilemenu a[href="#menuclose"]
+	{
+		width: auto;
+		float: right;
+		text-align: right;
+	}
+	#mobilemenu a[href="#menuclose"] img
+	{
+		width: 44px;
+		height: 44px;
+		margin: 12px;
+	}
+	#mobilemenu .yhh li
+	{
+		display: block;
+		padding-left: 13px;
+		font-size: 16px;
+		margin-left: 0px !important;
+		padding: 16px;
+		text-align: center;
+	}
+	#faq2, #faq2.clicked
+	{
+/*		display: block;*/
+		padding: 6px;
+		width: 100%;
+		margin-top: 24px;
+		background: none;
+	}
+        #faq2 a
+	{
+		padding: 6px 20px;
+	}
+	#faqwrap
+	{
+		margin-bottom: 60px;
+	}
+
+	.faqgap {margin-top: -61px;}
+
+	#buyfnt,
+	#liq {
+	    display: none !important;
+/*	    clear: both;
+	    text-align: center;
+		left: unset !important;
+		margin-top: 6px;*/
+	}
+	.sociallinks li 
+	{
+		padding: 0px 15px;
+	}
+
+	/* мобильное меню */
+	.bottomdiv
+	{
+		top: 0px !important;
+	}
+	.bottomdiv ul
+	{
+		display: block !important;
+		width: 100%;
+	}
+	.bottomdiv ul.desktop
+	{
+		display: none !important;
+	}
+
+	.bottomdiv .links.yh .mobile
+	{
+		display: inline;
+	}
+
+	.pad-fix-b
+	{
+		display: inline-block;
+		padding-bottom: 1.5px;
+		padding-top: 0px;
+		padding-right: 2px;
+		padding-left: 2px;
+		margin: 0px 0px;
+		margin-left: 5px;
+		transition: all .5s ease 0s;
+		text-decoration: none;
+		color: white;
+		font-size: 12px;
+		font-family: 'Montserrat';
+		font-weight: bold;
+	}
+
+	.buyfntliqmobile
+	{
+		text-align: center;
+		padding: 0px 0px 12px;
+		margin: 0px auto;
+		display: block;
+		width: 250px;
+		position: relative;
+		z-index:1;
+		top: 20px;
+	}
+	.pad-fix-a
+	{
+		display: inline-block;
+		padding: 2px;
+		margin: 0px 0px;
+		margin-left: 5px;
+		transition: all .5s ease 0s;
+		text-decoration: none;
+		color: white;
+		font-size: 12px;
+		font-family: 'Montserrat';
+		font-weight: bold;
+	}
+
+	.iea {
+		position: relative;
+		top: 2px;
+	}
+
+	.iba {
+		position: relative;
+		top: 3.5px;
+	}
+
+	.buyfntliqmobile a:hover
+	{
+		transform: scale(1.1);
+	}
+
+	ul
+	{
+
+	}
+	.sociallinks
+	{
+		display: block;
+		text-align: center;
+		top: -34px;
+		padding-left: 0px;
+		width: 234px;
+		margin: 0px auto;
+	}
+	.sociallinks li:first-child a	
+	{
+		padding: 0px;
+	}
+	
+	.wrapper
+	{
+		overflow-x: hidden;
+		min-height: 100%;
+		height: auto;
+		position: relative;
+	}
+
+	.stakeclaimend 
+	{
+		margin: 0px;
+	}
+	.stakeclaimend img
+	{
+/*		width: 32%;
+		border-radius: 3px !important;*/
+
+
+		width: 160px;
+		border-radius: 3px !important;
+		margin: 32px auto;
+		display: block;
+
+	}
+	.logoname
+	{
+		transform: scale(1.2);
+		margin-bottom: 12px;
+	}
+
+	#precab>img,
+	#cab>img
+	{
+		max-width: 200px;
+	}
+	h1
+	{
+		font-size: 24px;
+	}
+	#earning
+	{
+		top: -45px;
+		font-size: 15px;
+		left: 5.4%;
+	}
+
+	.bottomwrapper
+	{
+/*		bottom: unset !important;*/
+		position: absolute !important;
+		height: 100px !important;
+	}
+
+	.slideshow-container .mySlides.fade/*:first-child*/
+	{
+		margin-top: 80px !important;
+		margin-bottom: 160px;
+	}
+
+	.slideshow-container .mySlides.fade:first-child
+	{
+		padding-top: 100px;
+	}
+
+	/* APY */
+	.stakevalue
+	{
+		font-size: 16px;
+		bottom: 33px;
+	}
+
+}
+
+@media (max-width: 560px)
+{
+	.sociallinks
+	{
+		top: -70px;
+	}
+}
+
+@media (max-width: 480px)
+{
+
+	#buyfnt
+	{
+		margin-left: 0px;
+	}
+	.sociallinks
+	{
+		margin: 0px;
+	}
+
+/*	#buyfnt,
+	#liq
+	{
+		display: inline-block;
+		clear: both;
+		padding: 2px;
+		width: 100px;
+		float:right;
+	}
+	#liq
+	{
+		left: 0px !important;
+	}	*/
+
+
+}
+
+
+</style>
+<div id="loader" style="background-color: black; display: block; text-align:center; width: 100%; height: 100%; position: fixed; z-index: 10; color: white;"><img style="margin-top: 260px; border:none; border-radius:160px; animation: glow 1.5s 0.3s infinite alternate;" src="https://falcon.finance/loaderico.svg" /></div>
+<div id="txchk" style="background-color: rgba(0,0,0,0.8); display: none; text-align:center; width: 100%; height: 100%; position: fixed; z-index: 1; color: white;"><img style="margin-top: 260px; border:none; border-radius:160px; animation: glow 1.5s 0.3s infinite alternate;" src="https://falcon.finance/loaderico.svg" /></div>
+<div class="wrapper">
+<div style=" width: 100%;">
+<div class="topblockmobile mobile">
+<a href="/"><img src="https://falcon.finance/falconlogosm.svg" alt="Falcon Logo" /></a>
+<a href="#menuopen" id="menuopen" onclick="document.getElementById('mobilemenu').classList.toggle('opened'); document.getElementById('menuopen').classList.toggle('opened'); return false;"><img src="https://falcon.finance/menu.svg" alt="menuopen" /></a>
+</div>
+<div class="topblock desktop" id="mobilemenu">
+<ul>
+<li style="margin-left: 10%;"><img src="https://falcon.finance/falconlogosm.svg" style="position: relative; top: 11px;" /></li>
+</ul>
+<a href="#menuclose" class="mobile" onclick="document.getElementById('mobilemenu').classList.toggle('opened'); document.getElementById('menuopen').classList.toggle('opened'); return false;"><img src="https://falcon.finance/close.svg" alt="menuclose" /></a>
+<ul class="links yhh" style="position: relative; font-weight: bolder; font-family:'Montserrat'; top: -47px;">
+<li style="margin-left: 12%;"><a class="do" href="https://falconofficial.com" target="_blank">ABOUT</a></li>
+<li><a id="startt" class="ly" href="https://falcon.finance">HOME</a></li>
+<li id="faqwrap"><a id="faq" class="ly" href="#" onclick="document.getElementById('faq2').classList.toggle('clicked'); return false;">NETWORK STAKING</a>
+<div id="faq2">
+<a href="#" onclick="connectToEth()">ETH Staking</a>
+<a href="#" onclick="connectBSC()">BSC Staking</a>
+</div>
+</li>
+<li id="faqwrap" class="faqgap"><a id="faq" class="ly" href="#" onclick="document.getElementById('faq2').classList.toggle('clicked'); return false;">F.A.Q.</a>
+<div id="faq2">
+<a href="https://medium.com/@vi_taly/fnt-tokens-farming-instruction-5d327a01324a" target="_blank">English</a>
+<a href="https://medium.com/@vi_taly/%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE-%D1%84%D0%B0%D1%80%D0%BC%D0%B8%D0%BD%D0%B3%D1%83-%D1%82%D0%BE%D0%BA%D0%B5%D0%BD%D0%BE%D0%B2-fnt-19e7e7cf3605" target="blank">Russian</a>
+</div>
+</li>
+<li id="buyfnt" class="network" style="position:relative; border: 2px solid purple; border-radius: 4px; color: white; padding: 3.4px;">Ethereum Mainnet  <img class="network_logo" src="ethlogo.svg"></li>
+<li id="liq" class="addy" style="position:relative; border: 1.7px solid white; border-radius: 4px; color: white; padding:3.4px;">Address 0x  <img src="check.svg"></li>
+</ul>
+<ul class="sociallinks">
+<li>
+<a href="https://www.youtube.com/channel/UChKiblTwUGJJwrI2kO0C_qg" target="_blank"><img src="https://falcon.finance/youtube.svg" alt="falcon"></a>
+</li>
+<li>
+<a href="https://t.me/Falcon_official" target="_blank"><img src="https://falcon.finance/telegram.svg" alt="falcon"></a>
+</li>
+<li>
+<a href="https://twitter.com/Falcon_SBS?s=09" target="_blank"><img src="https://falcon.finance/twitter.svg" alt="falcon"></a>
+</li>
+<li>
+<a href="https://t.me/Falcon_announcement" target="_blank"><img src="https://falcon.finance/bell.svg" alt="falcon"></a>
+</li>
+</ul>
+</div>
+<div class="mobile buyfntliqmobile">
+<a target="_blank" class="pad-fix-a network" style="border: 2px solid purple; border-radius: 8px;" href="#">Ethereum Mainnet  <img class="iea network_logo" src="ethlogo.svg" /></a>
+<a target="_blank" class="pad-fix-b addy" style="border: 1.7px solid white; border-radius: 8px;" href="#">Address 0x  <img class="iba" src="check.svg" /></a>
+</div>
+<div class="slideshow-container" style="text-align: center;">
+<div class="mySlides fade" style="text-align: center; margin-top: 4%;">
+<div>
+<div class="desktop"><img src="https://falcon.finance/falconlogo.svg" /></div>
+<div><img class="logoname" src="https://falcon.finance/logoname.svg" alt="Falcon name" /></div><br>
+</div>
+<div style="text-align: center;">
+<h1 style="color: white; font-weight: lighter; font-family: 'Montserrat'; margin-top:-18px;">A new word in privacy<br>and decentralized finance
+</h1><br>
+<div id="virgil"><a><button id="conect" class="glooow" style="border: 3px solid #33FFE6; background-color: black; border-radius:12px; font-weight: bold; font-size: 22px; font-family: 'Montserrat'; padding: 18px 13px;">CONNECT WALLET</button></a></div>
+<div id="wla"><img src="https://falcon.finance/walletnactive.svg" /></div>
+<div id="mmsk" style="margin-top: 16px;"><img src="https://falcon.finance/metamask1.svg" /></div>
+</div>
+</div>
+<div id="apy"></div>
+<div class="mySlides fade" style="text-align: center; margin-top: 2.1%;">
+<div class="stakeclaimend" style="display:inline-block;position:relative;"><img style="border-radius: 12px;" src="https://falcon.finance/stake.svg" id="stake" class="gloow" /><p class="stakevalue"></p></div>
+<div class="stakeclaimend" style="display:inline;"><img style="border-radius:12px;" src="https://falcon.finance/claim_color.svg" onclick="reward()" id="reward" class="gloow" /></div>
+<div class="stakeclaimend" style="display:inline;"><img style="border-radius:12px;" src="https://falcon.finance/end.svg" onclick="end()" id="end" class="gloow" /></div>
+<div style="margin-top: 36px;" id="precab">
+<img src="https://falcon.finance/availableReward.svg" />
+<div id="earning">Loading...</div>
+</div>
+</div>
+<div class="mySlides fade" style="text-align: center; margin-top: 3%;">
+<div class="stakeclaimend" style="display:inline-block;position:relative;"><img class="gloow" id="stakbar" style="border-radius: 12px;" src="https://falcon.finance/stakemnc.svg" /><p class="stakevalue"></p></div>
+<div class="stakeclaimend" style="display:inline;"><img class="gloow" style="border-radius:12px;" src="https://falcon.finance/claim_monochrom.svg" /></div>
+<div class="stakeclaimend" style="display:inline;"><img class="gloow" style="border-radius:12px;" id= "endmnc" src="https://falcon.finance/endmnc.svg" /></div>
+<div id="cab" style="margin-top:36px; text-align: center;">
+<img class="gloow" style="border-radius: 10px;" id="apbut" src="approve2.svg" />
+</div>
+</div>
+</div>
+</div>
+<div class="bottomwrapper" style="width: 100%; bottom: 0; height: 15%; font-family: 'Montserrat'; font-weight: light; position: fixed; background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));">
+<div class="bottomdiv" style="text-align: center; width: 100%; position: relative; top: 47px;">
+<ul class="links yh" style="position:relative; top: 44%;">
+<li><a href="https://etherscan.io/token/0xdc5864ede28bd4405aa04d93e05a0531797d9d59" target="_blank">Falcon Token Contract</a></li>
+<li class="mobile"><a href="https://www.coingecko.com/en/coins/falcon-project" target="_blank">CoinGecko</a></li>
+<li class="mobile"><a href="https://coinmarketcap.com/currencies/falcon-project/" target="_blank">CoinMarketCap</a></li>
+</ul>
+<ul class="links yh">
+<li id="crit" style="color: grey;">Copyright &copy; Falcon Project, 2020 - 2021</li>
+</ul>
+<ul class="links yh desktop" style="position:relative; top: 44%; display: inline;">
+<li style=""><a href="https://www.coingecko.com/en/coins/falcon-project" target="_blank">CoinGecko</a></li>
+<li style=""><a href="https://coinmarketcap.com/currencies/falcon-project/" target="_blank">CoinMarketCap</a></li>
+</ul>
+</div>
+</div>
+</div>
+<script src="g5f67n789RDJLt7555777555.js">
+</script>
+<script>
+/*var distAmount= 40000000;
+var durationContr= 2419200;
+var APYparam= (distAmount/(durationContr*13))*100;
+var paramInt= parseInt(APYparam);
+document.getElementById("apy").innerHTML= paramInt+"%";*/
+</script>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6180dcdc9d98181b',m:'dc621ac3b46b56acecf282633a4fd11fffa3ccbc-1611733616-1800-Adglz07+NF4AJpsD/ImwYvQZTcl0qeFoSwfllBtgTdlLRNyAhU2Am8hUL0BVJWi5p5oMxZ+tSDyW8OiinkSrCMOwv3Z3b6TA86qu7/tc555+CctRMPVnQTBbfYnTiM+zvA==',s:[0x01e3116460,0xba40715075],}})();</script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6886cbe76b13d919',m:'f20cbc52479cdc2656ee4c3c03a735c3d2154f03-1630586318-1800-AWTgR5eZ+k8Ah+Hj52GLGpnf4cdBQP4s7h7xSqeWX3bkeqsarosusoj114yX/HtLWKwy4ppEPXg8JkUhHYE8GTQoImzyhYdg8XmMzoQ48BPQkPEr924J0nO8U0Tv0wXPpw==',s:[0xe78325864b,0x9e678e1580],}})();</script></body>
+</html>
